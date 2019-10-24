@@ -1,0 +1,3 @@
+[submodule "src/common-components"]
+	path = src/common-components
+	url = https://github.com/Aleksefo/common-components.git
