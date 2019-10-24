@@ -12,7 +12,7 @@
     "pod": "cd ios && pod install && cd -",
     "bundle": "cd android && ./gradlew bundleRelease && cd -",
     "release": "react-native run-android --variant release",
-    "submodule": "cd src && git submodule add https://github.com/Aleksefo/common-components.git && cd - && git commit -am 'Add CC submodule' && git push origin master",
+    "submodule": "cd src && git submodule add https://github.com/Aleksefo/common-components.git && git config push.recurseSubmodules on-demand && cd - && git commit -am 'Add CC submodule' && git push origin master",
     "update": "git submodule update --remote",
     "reset": "git reset HEAD~1 && git push -f origin"
 
