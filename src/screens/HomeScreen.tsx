@@ -3,6 +3,7 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
 const HomeScreen = props => {
+  console.log('HomeScreen, HomeScreen')
   return (
     <View
       style={{
@@ -14,8 +15,17 @@ const HomeScreen = props => {
     >
       <Text>Home Screend</Text>
       <Button onPress={() => props.navigation.navigate('Configuration')} />
+      <Button
+        onPress={() => props.navigation.setParams({ otherParam: 'Updated!' })}
+      />
     </View>
   )
+}
+
+HomeScreen.navigationOptions = ({ navigation }) => {
+  return {
+    title: navigation.getParam('otherParam', 'A Nested Details Screen'),
+  }
 }
 
 const st = StyleSheet.create({
