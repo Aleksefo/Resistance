@@ -2,16 +2,38 @@ import React from 'react'
 // import { ActivityIndicator } from 'react-native'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
-import HomeScreen from 'screens/HomeScreen'
-import ConfigurationScreen from '../screens/ConfigurationScreen'
+import {
+  ConfigurationScreen,
+  HomeScreen,
+  RosterScreen,
+  RulesScreen,
+} from 'screens'
 
 const AppContainer = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
+      navigationOptions: () => ({
+        title: `Home`,
+      }),
     },
     Configuration: {
       screen: ConfigurationScreen,
+      navigationOptions: () => ({
+        title: `Configuration`,
+      }),
+    },
+    Rules: {
+      screen: RulesScreen,
+      navigationOptions: () => ({
+        title: `Rules`,
+      }),
+    },
+    Roster: {
+      screen: RosterScreen,
+      navigationOptions: () => ({
+        title: `Roster`,
+      }),
     },
   },
   {

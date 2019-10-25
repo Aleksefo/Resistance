@@ -13,10 +13,15 @@ const HomeScreen = props => {
         backgroundColor: 'pink',
       }}
     >
-      <Text>Home Screend</Text>
-      <Button onPress={() => props.navigation.navigate('Configuration')} />
+      <Text>Game description</Text>
       <Button
-        onPress={() => props.navigation.setParams({ otherParam: 'Updated!' })}
+        onPress={() => props.navigation.navigate('Configuration')}
+        title={'start'}
+      />
+      <Button
+        onPress={() => props.navigation.navigate('Rules')}
+        title={'rules'}
+        disabled
       />
     </View>
   )
