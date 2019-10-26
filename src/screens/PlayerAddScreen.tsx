@@ -2,15 +2,20 @@ import { Button } from 'common-components'
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const ConfigurationScreen = props => {
-  console.log('ConfigurationScreen, ConfigurationScreen')
+const PlayerAddScreen = props => {
   return (
     <View>
-      <Text>Player number selector</Text>
+      <Text>PlayerAddScreen component</Text>
       <Text>Description</Text>
+      <Text>Text input</Text>
+      <Button
+        onPress={() => props.navigation.navigate(' ')}
+        title={'Reveal identity'}
+        disabled
+      />
       <Button
         onPress={() => props.navigation.navigate('Roster')}
-        title={'Add Players'}
+        title={'Save'}
       />
     </View>
   )
@@ -20,4 +25,4 @@ const st = StyleSheet.create({
   container: {},
 })
 
-export default ConfigurationScreen
+export default PlayerAddScreen

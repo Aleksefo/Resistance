@@ -5,8 +5,14 @@ import { createStackNavigator } from 'react-navigation-stack'
 import {
   ConfigurationScreen,
   HomeScreen,
+  MainScreen,
+  MissionSelectionScreen,
+  NightScreen,
+  PlayerAddScreen,
   RosterScreen,
   RulesScreen,
+  VotingPreparationScreen,
+  VotingScreen,
 } from 'screens'
 
 const AppContainer = createStackNavigator(
@@ -33,6 +39,42 @@ const AppContainer = createStackNavigator(
       screen: RosterScreen,
       navigationOptions: () => ({
         title: `Roster`,
+      }),
+    },
+    PlayerAdd: {
+      screen: PlayerAddScreen,
+      navigationOptions: () => ({
+        title: `PlayerAdd`,
+      }),
+    },
+    Night: {
+      screen: NightScreen,
+      navigationOptions: () => ({
+        title: `Night`,
+      }),
+    },
+    Main: {
+      screen: MainScreen,
+      navigationOptions: () => ({
+        title: `Main`,
+      }),
+    },
+    MissionSelection: {
+      screen: MissionSelectionScreen,
+      navigationOptions: () => ({
+        title: `MissionSelection`,
+      }),
+    },
+    VotingPreparation: {
+      screen: VotingPreparationScreen,
+      navigationOptions: () => ({
+        title: `VotingPreparation`,
+      }),
+    },
+    Voting: {
+      screen: VotingScreen,
+      navigationOptions: () => ({
+        title: `Voting`,
       }),
     },
   },
