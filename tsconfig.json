@@ -53,7 +53,8 @@
       "screens": ["./screens"],
       "components": ["./components"],
       "navigation": ["./navigation"],
-      "common-components": ["./common-components"]
+      "common-components": ["./common-components"],
+      "state": ["./state"]
     },
     /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */

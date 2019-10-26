@@ -21,6 +21,7 @@ module.exports = {
           navigation: './src/navigation',
           components: './src/components',
           'common-components': './src/common-components',
+          state: './src/state',
         },
       },
     ],
